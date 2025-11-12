@@ -2,11 +2,14 @@
   "name": "shush-meter-app",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://nizo1-7.github.io/shush-meter-app-v2",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +21,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.0",
+    "gh-pages": "^6.3.0",
     "vite": "^7.2.2"
   }
 }
