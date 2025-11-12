@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+  padding: 2em;
+  font-family: sans-serif;
+}
+
+.App-header {
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.App-header p {
+  color: #666;
+  min-height: 1.2em;
+}
+
+.controls {
+  margin: 2em 0;
+}
+
+.control-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.control-button:hover {
+  background-color: #2980b9;
+}
+
+.control-button.disconnect {
+  background-color: #e74c3c;
+}
+
+.control-button.disconnect:hover {
+  background-color: #c0392b;
+}
+
+.status-display {
+  margin: 1.5em 0;
+  padding: 1em;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  display: inline-block;
+  min-width: 250px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.status-display p {
+  margin: 0.5em 0;
+  font-size: 1.1rem;
+}
+
+.mode-on {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.mode-off {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2em 0;
+}
+
+.dev-mode {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dev-controls {
+  margin-top: 1em;
+}
+
+.dev-controls h4 {
+  margin-top: 0;
+}

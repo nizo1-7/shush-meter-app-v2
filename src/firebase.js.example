@@ -1,0 +1,23 @@
+// src/firebase.js
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore"; // Firestoreをインポート
+
+// あなたのFirebase設定
+const firebaseConfig = {
+  apiKey: "AIzaSyCVIdBznSOMnCKNqPuAuW2trTHi6BqX-Uo",
+  authDomain: "shush-meter-app.firebaseapp.com",
+  projectId: "shush-meter-app",
+  storageBucket: "shush-meter-app.firebasestorage.app",
+  messagingSenderId: "992780197471",
+  appId: "1:992780197471:web:48764b6f3713198d7d05ea",
+  measurementId: "G-R8HJ6TCLK6"
+};
+
+// Firebaseを初期化
+const app = initializeApp(firebaseConfig);
+
+// Firestoreのインスタンスを取得
+const db = getFirestore(app);
+
+// 他のコンポーネントで利用できるようにエクスポート
+export { db };
